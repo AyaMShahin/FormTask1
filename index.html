@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <!-- Form Body -->
+  <form action="results.html" method="get" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Sign Up</legend>
+      <div class="user-name input-margin">
+        <input type="text" name="name" id="fname" required placeholder="First name">
+        <input type="text" name="name" id="lname" required placeholder="Surname">
+
+      </div>
+
+      <div class="user-email input-margin">
+        <!-- <label class="rleft" for="email">Email</label> -->
+        <input type="email" name="email" id="email" required placeholder="Email address">
+      </div>
+
+      <div class="user-age input-margin">
+        <!-- <label class="rleft" for="age">Age</label> -->
+        <input type="number" name="age" id="age" min="12" max="100" required step="1" placeholder="Age">
+      </div>
+
+      <div class="user-phone input-margin">
+        <!-- <label class="rleft" for="phone">Phone Number</label> -->
+        <input type="tel" name="phone" id="phone" placeholder="Phone number">
+      </div>
+
+      <div class="user-birthdate input-margin">
+        <label class="rleft" for="birthdate">Date of birth</label>
+        <input type="date" name="birthdate" id="birthdate" required>
+      </div>
+
+      <div class="user-gender input-margin">
+        <label class="rleft dblock input-margin" style="font-size: 16px;">Gender:</label>
+
+        <label class="rleft fonts" for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label class="rleft fonts" for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
+      <div class="user-country input-margin">
+        <label class="rleft" for="country">Country</label>
+        <select name="country" id="country">
+          <option value="default">Choose your country</option>
+          <option value="america">America</option>
+          <option value="egypt">Egypt</option>
+          <option value="gemrany">Germany</option>
+          <option value="saudi arabia">Saudi Arabia</option>
+        </select>
+      </div>
+
+      <div class="picfile input-margin">
+        <label class="rleft" for="profile">Profile picture</label>
+        <input type="file" name="profile" id="profile" multiple>
+      </div>
+
+      <div class="hobbies input-margin">
+        <label class="rleft dblock input-margin">Hobbies: </label>
+        <label class="rleft fonts" for="chess">Playing chess</label>
+        <input type="checkbox" name="chess" id="chess">
+        <label class="rleft fonts" for="read">Reading books</label>
+        <input type="checkbox" name="read" id="read">
+
+      </div>
+
+      <div class="prog-lang input-margin">
+        <label class="rleft dblock input-margin" for="languages">Choose a programming language</label>
+        <select name="languages" id="languages">
+          <option value="default">Choose a Language</option>
+          <option value="javaScript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="kotlin">Kotlin</option>
+          <option value="java">Java</option>
+        </select>
+      </div>
+
+      <div class="user-web input-margin">
+        <label class="rleft" for="website">Website</label>
+        <input type="url" name="website" id="website" placeholder="Website">
+      </div>
+
+      <div class="user-color input-margin">
+        <label class="rleft" for="color">Choose your favorite color</label>
+        <input type="color" name="color" id="color">
+      </div>
+
+      <div class="user-address input-margin">
+        <div>
+          <label class="rleft" for="address">Address</label>
+        </div>
+        <textarea name="address" id="address" cols="30"></textarea>
+      </div>
+
+      <div class="user-pass input-margin">
+        <label class="rleft" for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="New password">
+      </div>
+      <div class="btns">
+        <button id="res" type="reset">Reset</button>
+        <button id="sub" type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+  <!-- Form End -->
+</body>
+
+</html>
